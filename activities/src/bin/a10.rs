@@ -12,5 +12,15 @@
 // * Use a match expression to determine which message
 //   to print
 
-fn main() {}
+fn print_result(result: bool) {
+    match result {
+        true => println!("it's higher than 100"),
+        false => println!("it's lower than 100"),
+    }
+}
+fn main() {
+    let value = 1000;
+    let result = value > 100;
 
+    print_result(result);
+}
